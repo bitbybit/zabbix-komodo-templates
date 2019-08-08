@@ -15,6 +15,14 @@ Summarized balance of `wallet.dat`
  - History: 90d
  - Trends: 365d
 
+### blocks (numeric)
+
+Sum of blocks (locally synced).
+
+ - Interval: 1m
+ - History: 2w
+ - Trends: 365d
+
 ### blocks vs longest chain (text)
 
 Comparing of `blocks` and `longestchain` values.
@@ -38,12 +46,26 @@ Earned percent.
  - History: 1w
  - Trends: 365d
 
-### number of connections
+### longestchain (numeric)
+
+Sum of blocks (from remote nodes).
+
+ - Interval: 1m
+ - History: 2w
+ - Trends: 365d
+
+### number of connections (numeric)
 
 Number of current active connections.
 
  - Interval: 1m
  - History: 1w
+ - Trends: 365d
+
+### synced (numeric)
+
+ - Interval: 1m
+ - History: 2w
  - Trends: 365d
 
 ### `komodod` is running
