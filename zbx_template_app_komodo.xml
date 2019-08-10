@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-08-08T05:42:53Z</date>
+    <date>2019-08-10T10:01:45Z</date>
     <groups>
         <group>
             <name>Templates/Modules</name>
@@ -566,7 +566,7 @@
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>system.run[pgrep -a komodod | wc -l]</key>
+                    <key>system.run[&quot; if [ $(pgrep -a komodod | wc -l) -ge 1 ]; then echo '1'; else echo '0'; fi &quot;]</key>
                     <delay>1m</delay>
                     <history>1w</history>
                     <trends>365d</trends>
@@ -633,7 +633,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App Komodo:system.run[pgrep -a komodod | wc -l].max(#3)}=0</expression>
+            <expression>{Template App Komodo:system.run[&quot; if [ $(pgrep -a komodod | wc -l) -ge 1 ]; then echo '1'; else echo '0'; fi &quot;].max(#3)}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>komodod is down on {HOST.NAME}</name>
