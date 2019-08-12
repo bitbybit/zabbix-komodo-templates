@@ -46,6 +46,11 @@ Earned percent.
  - History: 1w
  - Trends: 365d
 
+### KMDversion (text)
+
+ - Interval: 60m
+ - History: 1w
+
 ### longestchain (numeric)
 
 Sum of blocks (from remote nodes).
@@ -62,10 +67,32 @@ Number of current active connections.
  - History: 1w
  - Trends: 365d
 
+### protocolversion (numeric)
+
+Magicbeam.
+
+ - Interval: 60m
+ - History: 1w
+ - Trends: 365d
+
 ### synced (numeric)
 
  - Interval: 1m
  - History: 2w
+ - Trends: 365d
+
+### version (numeric)
+
+Version of code.
+
+ - Interval: 60m
+ - History: 1w
+ - Trends: 365d
+
+### walletversion (numeric)
+
+ - Interval: 60m
+ - History: 1w
  - Trends: 365d
 
 ### `komodod` is running
