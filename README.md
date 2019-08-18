@@ -59,6 +59,43 @@ Sum of blocks (from remote nodes).
  - History: 2w
  - Trends: 365d
 
+### notarized (numeric)
+
+Last block notarized in bitcoin.
+
+ - Interval: 1m
+ - History: 2w
+ - Trends: 365d
+
+### notarizedhash (text)
+
+Hash of last block notarized in bitcoin.
+
+ - Interval: 1m
+ - History: 3d
+
+### notarizedtxid (text)
+
+Bitcoin transaction of notarization.
+
+ - Interval: 1m
+ - History: 3d
+
+### notarizedtxid_height (text)
+
+Bitcoin block of notarization.
+
+ - Interval: 1m
+ - History: 3d
+
+### notarized_confirms (numeric)
+
+`0` if `notarizedtxid_height` is `mempool`.
+
+ - Interval: 1m
+ - History: 2w
+ - Trends: 365d
+
 ### number of connections (numeric)
 
 Number of current active connections.
