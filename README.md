@@ -104,9 +104,25 @@ Number of current active connections.
  - History: 1w
  - Trends: 365d
 
+### paytxfee (float)
+
+Fee from config.
+
+ - Interval: 60m
+ - History: 1w
+ - Trends: 365d
+
 ### protocolversion (numeric)
 
 Magicbeam.
+
+ - Interval: 60m
+ - History: 1w
+ - Trends: 365d
+
+### relayfee (float)
+
+Fee from config.
 
  - Interval: 60m
  - History: 1w
