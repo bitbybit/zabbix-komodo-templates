@@ -112,6 +112,13 @@ Fee from config.
  - History: 1w
  - Trends: 365d
 
+### prevMoMheight (text)
+
+Tha last KMD block of notarization.
+
+ - Interval: 1m
+ - History: 3d
+
 ### protocolversion (numeric)
 
 Magicbeam.
@@ -129,6 +136,14 @@ Fee from config.
  - Trends: 365d
 
 ### synced (numeric)
+
+ - Interval: 1m
+ - History: 2w
+ - Trends: 365d
+
+### tiptime (numeric)
+
+timestamp of the last block.
 
  - Interval: 1m
  - History: 2w
