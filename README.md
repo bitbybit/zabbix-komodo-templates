@@ -2,8 +2,15 @@
 
 ## Requirements
 
+### Dependencies
+
  - `komodo-cli`
  - `jq`
+ - `wget`
+
+### Path to agent scripts directory
+
+`$HOME/zabbix/komodo`
 
 ## Items
 
@@ -50,6 +57,18 @@ Earned percent.
 
  - Interval: 60m
  - History: 1w
+
+### `komodod` is running (numeric)
+
+ - Interval: 1m
+ - History: 1w
+ - Trends: 365d
+
+### Last block hash is the same as on [kmdexplorer](https://kmdexplorer.ru/) (numeric)
+
+ - Interval: 1m
+ - History: 1w
+ - Trends: 365d
 
 ### longestchain (numeric)
 
@@ -163,8 +182,8 @@ Version of code.
  - History: 1w
  - Trends: 365d
 
-### `komodod` is running
-
 ## Triggers
 
 ### `komodod` is down
+
+### Last block hash differs from kmdexplorer
